@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Romanesco&display=swap" rel="stylesheet">
+    <title>Anthony Purcella - Personal Portfolio</title>
 </head>
 <body>
     <header>
+        <div class="name-photo">
         <h1 id="name">Anthony Purcella</h1>
-        <img src="/images/57B70522-7A7F-4D2A-9EE8-DA483D5252F5.JPG" alt="Photo of Anthony Purcella"> 
+        <img class="img-anthony" src="/images/57B70522-7A7F-4D2A-9EE8-DA483D5252F5.JPG" alt="Photo of Anthony Purcella">
+        </div>
     </header>
-    <nav>
-        <ul class="nav-items">
-            <li class="nav-item">About Me</li>
-            <li class="nav-item">Projects</li>
+    <nav id="main-nav">
+        <ul class="nav-items no-margin-bottom no-margin-top">
+            <li class="nav-item">
+                <a href="index.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html">Projects</a>
+            </li>
             <li class="nav-item">
                 <a href="contact.html">Contact</a>
             </li>
@@ -22,8 +31,10 @@
     </nav>
     <main>
     <section id="contact">
-        <h2>Contact Me</h2>
+        <div class="contact-me">
+            <h2>Contact Me</h2>
         <p>Please feel free to reach out for any questions on my projects or if you would like to work together!</p>
+        </div>
         <div class="email">
             <h3>Email</h3>
             <a href="mailto:purcellaanthony@gmail.com">purcellaanthony@gmail.com</a>
@@ -34,6 +45,16 @@
         </div>
     </section>
     </main>
+    <footer>
+        <div class="skill-logos">
+            <img class="skill-logo" src="/images/html-5.png" alt="HTML Logo">
+            <img class="skill-logo" src="/images/css-3 (1).png" alt="CSS Logo">
+            <img class="skill-logo" src="/images/java-script.png" alt="JavaScript Logo">
+            <img class="skill-logo" src="/images/github.png" alt="Git Logo">
+            <img class="skill-logo-node" src="/images/node-js.png" alt="Node.js Logo">
+            <img class="skill-logo" src="/images/command-line (1).png" alt="Command Line Logo">
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
