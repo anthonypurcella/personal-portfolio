@@ -5,6 +5,8 @@ html {
     margin: 0 2rem;
     font-family: "Noto Sans";
     overflow: scroll;
+    background-color: #f5f5f5;
+    color: #212121;
 }
 header {
    display: flex;
@@ -15,8 +17,8 @@ body {
     width: 70rem;
 }
 #name {
-    background-color: black;
-    color: white;
+    background-color: #ffffff;
+    color: #212121;
     padding: 1rem;
     border-radius: 2rem;
     text-transform: lowercase;
@@ -29,6 +31,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px #212121 solid;
 }
 .name-photo {
     max-width: 400px;
@@ -53,15 +56,23 @@ body {
     padding-top: .5rem;
     padding-bottom: .5rem;
     margin-right: 1.5rem;
-    background-color: black;
-    color: white;
+    background-color: #ffffff;
+    color: #212121;
     list-style: none;
-    border: 1px black solid;
+    border: 2px #212121 solid;
     border-radius: 2rem;
     text-transform: uppercase;
+    font-size: 1rem;
+}
+.nav-items a {
+    text-decoration: none;
+}
+.nav-items p:hover {
+    transform: scale(1.3);
+    transition: ease-in-out .2s;
 }
 .nav-items :visited {
-    color: white;
+    color: #292929;
 }
 
 #about-me {
@@ -78,12 +89,15 @@ body {
 #about-me p {
     font-size: 2rem;
     font-style: italic;
+    border: 2px #212121 solid;
+    border-radius: 2rem;
+    padding: 2rem;
+    background-color: #ffffff;
 }
 #projects {
-    margin-bottom: 80px;
-    margin-top: 12rem;
+    margin-bottom: 40px;
+    margin-top: 15rem;
     max-width: 100vw;
-
 }
 #projects h2 {
     font-size: 6rem;
@@ -127,7 +141,7 @@ div .project p {
     text-align: center;
 }
 .detail-box {
-    border: 3px black solid;
+    border: 3px #212121 solid;
     border-radius: 60px;
     width: 12rem;
     height: 10rem;
@@ -136,13 +150,41 @@ div .project p {
     display: flex;
     align-items: center;
     margin-top: 0px;
+    background-color: #ffffff;
+    color: #212121;
+    transition: ease-in-out .2s;
+}
+.detail-box a {
+    text-decoration: none;
+    color: #212121;
 }
 .detail-box:hover {
     transform: scale(1.05);
+    margin-top: 15px;
+    margin-bottom: -15px;
+    transition: ease-in-out .2s;
 }
+#collab {
+    width: 25rem;
+    height: 5rem;
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 80px;
+}
+#collab p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #212121;
+    transition: ease-in-out .2s;
+}
+#collab p:hover {
+    transform: scale(1.05);
+    transition: ease-in-out .2s;
+}
+
 footer {
     position: fixed;
-    background-color: whitesmoke;
+    background-color: #ffffff;
     height: 80px;
     bottom: 0px;
     left: 0px;
@@ -154,9 +196,31 @@ footer {
 }
 .skill-logos {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     justify-self: center;
     width: 25rem;
+}
+.skill-logo {
+    margin-left: .5em;
+    margin-right: .5rem;
+    transition: ease-in-out .2s;
+}
+.skill-logo-node {
+    margin-left: .5em;
+    margin-right: .5rem;
+    transition: ease-in-out .2s;
+}
+.skill-logo:hover {
+    transform: scale(1.3);
+    transition: ease-in-out .2s;
+    margin-left: 1em;
+    margin-right: 1rem;
+}
+.skill-logo-node:hover {
+    transform: scale(1.3);
+    margin-left: 1em;
+    margin-right: 1rem;
+    transition: ease-in-out .2s;
 }
 .skill-logo {
     height: 2.5rem;
@@ -179,17 +243,26 @@ footer {
     padding-bottom: 1rem;
 }
 .contact-me {
-    background-color: whitesmoke;
-    border: 1.5px black solid;
+    background-color: #ffffff;
+    color: #212121;
+    border: 2px black solid;
     border-radius: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60rem;
+    width: 30rem;
+    text-align: center;
+}
+.contact-me p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: .25rem;
+    margin-bottom: 1.25rem;
 }
 .email {
-    background-color: whitesmoke;
-    border: 1.5px black solid;
+    background-color: #ffffff;
+    color: #212121;
+    border: 2px black solid;
     border-radius: 60px;
     display: flex;
     flex-direction: column;
@@ -198,9 +271,26 @@ footer {
     margin-top: 2rem;
     margin-bottom: 1.5rem;
 }
+.email a {
+    color: #212121;
+    transition: ease-in-out .2s;
+}
+.email a:hover {
+    transform: scale(1.05);
+    transition: ease-in-out .2s;
+}
+.instagram a {
+    color: #212121;
+    transition: ease-in-out .2s;
+}
+.instagram a:hover {
+    transition: ease-in-out .2s;
+    transform: scale(1.05);
+}
 .instagram {
-    background-color: whitesmoke;
-    border: 1.5px black solid;
+    background-color: #ffffff;
+    color: #212121;
+    border: 2px black solid;
     border-radius: 60px;
     display: flex;
     flex-direction: column;
